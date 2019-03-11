@@ -95,6 +95,9 @@
     "doctrine/reflection": {
         "version": "v1.0.0"
     },
+    "fig/link-util": {
+        "version": "1.0.0"
+    },
     "jdorn/sql-formatter": {
         "version": "v1.2.17"
     },
@@ -132,6 +135,9 @@
         "version": "1.0.1"
     },
     "psr/container": {
+        "version": "1.0.0"
+    },
+    "psr/link": {
         "version": "1.0.0"
     },
     "psr/log": {
@@ -238,6 +244,18 @@
             "ref": "fadbfe33303a76e25cb63401050439aa9b1a9c7f"
         }
     },
+    "symfony/messenger": {
+        "version": "4.1",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "4.1",
+            "ref": "f11dfa18618a8a5dd853ea3a302db2e0557e031c"
+        },
+        "files": [
+            "config/packages/messenger.yaml"
+        ]
+    },
     "symfony/polyfill-mbstring": {
         "version": "v1.10.0"
     },
@@ -325,6 +343,9 @@
         ]
     },
     "symfony/var-exporter": {
+        "version": "v4.2.4"
+    },
+    "symfony/web-link": {
         "version": "v4.2.4"
     },
     "symfony/web-server-bundle": {

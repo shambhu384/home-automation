@@ -8,7 +8,13 @@ use Symfony\Component\Serializer\Annotation\Groups;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 
 /**
- * @ApiResource()
+ * @ApiResource(
+ *     messenger=true,
+ *     collectionOperations={
+ *         "post"={"status"=202}
+ *     },
+ *     output=false
+ * )
  * @ORM\Entity(repositoryClass="App\Repository\GpioRepository")
  * @UniqueEntity("port")
  */
