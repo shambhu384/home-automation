@@ -1,0 +1,17 @@
+easy_admin:
+    entities:
+        # List the entity class name you want to manage
+        Gpio:
+            class: App\Entity\Gpio
+            form:
+                fields:
+                    - "name"
+                    - "port"
+                    - "state"
+                    - "division"
+                    - { property: 'turnOnIconFile', type: 'vich_file', type_options: { required: true }, base_path: '%app.path.gpio_images%'  }
+                    - { property: 'turnOffIconFile', type: 'vich_file', type_options: { required: true }, base_path: '%app.path.gpio_images%'  }
+
+
+#        - App\Entity\Category
+#        - App\Entity\User
